@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MyFirstXamarinApp" x:Class="MyFirstXamarinApp.MyFirstXamarinAppPage">
-	<Label Text="Welcome to Xamarin Forms in MacOS!" VerticalOptions="Center" HorizontalOptions="Center" />
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:MyFirstXamarinApp" 
+	x:Class="MyFirstXamarinApp.MyFirstXamarinAppPage">
+	<ContentPage.Content>
+	<Grid>
+		<StackLayout
+			VerticalOptions="Center" 
+			HorizontalOptions="Center" >
+			<Label Text="Welcome to Xamarin Forms in MacOS!"/>
+			<ContentView
+					BackgroundColor="Yellow"
+					Padding="25"
+					HorizontalOptions="Fill"
+					VerticalOptions="CenterAndExpand">
+					<ContentView.Content>
+						<Label TextColor="Black" Text="Hello!" />
+					</ContentView.Content>
+			</ContentView>					
+			<Button Text="Click" BackgroundColor="Red" TextColor="White" />
+		</StackLayout>
+	</Grid>
+	</ContentPage.Content>	
 </ContentPage>
