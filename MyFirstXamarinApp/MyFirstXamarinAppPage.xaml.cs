@@ -6,7 +6,7 @@ namespace MyFirstXamarinApp
 	{
 		public MyFirstXamarinAppPage()
 		{
-			InitializeComponent();
+			InitializeComponent(); //Responsable de cargar el XAML y crear los objetos
 		}
 	}
 }
